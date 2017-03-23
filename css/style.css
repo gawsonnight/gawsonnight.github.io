@@ -1,6 +1,20 @@
 body {
+	
 	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
 }
+
+
+.body {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+
+}
+
+
 
 .skills img {
 	width: 100px;
@@ -16,16 +30,17 @@ nav li {
 
 
 
-.body {
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 
 .skillswrapper {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between
 }
 
+.skillswrapper div img {
+	display: block;
+}
 h1 {
 	font-size: 30px;
 }
@@ -36,4 +51,100 @@ p {
 
 h2 {
 	font-size: 20px;
+}
+
+.infoplayer {
+	display: inline-block;
+}
+
+.music img {
+	display: block;
+}
+
+.music-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	position: relative;
+	height: 100%;
+}
+
+.song {
+	
+	transition: all 1s ease-in-out;
+	width: 32%;
+
+}
+
+.infoplayer {
+	text-align: left;
+	max-height: 100%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 35%;
+	bottom: 0;
+	right: 0;
+
+	transition: all 1s ease-in-out;
+
+
+
+}
+
+.infoplayer audio {
+	width: 100%;
+}
+
+.songinfo {
+	transition: all 1s ease-in-out;
+	
+
+}
+
+.songinfo img {
+	width: 100%;
+
+}
+
+
+
+
+/* Music Player Animations */
+
+
+
+.c1-tsi-2 {
+	transform: translateX(1000%);
+	opacity: 0;
+	
+}
+
+.c1-tsi-3 {
+	transform: translateX(1000%);
+	opacity: 0;
+	
+}
+
+
+.c1-tip-1 {
+	visibility: visible;
+	opacity: 1;
+}
+
+	
+	
+
+
+.displaynone {
+	display: none;
+}
+
+* {
+	 -webkit-transition: all 1s ease .15s;
+    -moz-transition: all 1s ease .15s;
+    -o-transition: all 1s ease .15s;
+    -ms-transition: all 1s ease .15s;
+    transition: all 1s ease .15s;
 }
