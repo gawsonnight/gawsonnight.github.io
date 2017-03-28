@@ -6,9 +6,15 @@ $('#songimage1').on('click', function () {
     $('#songinfo2').addClass('c1-tsi-2');
     $('#songinfo3').addClass('c1-tsi-3');
     $('#songinfo1').addClass('c1-tsi-1');
+     
     setTimeout(function () {
     	$('#infoplayer1').addClass('c1-tip-1');
-    }, 550);
+    }, 800);
+
+   
+    $('#song1').addClass('c1-ts-1');
+    
+
 
  
     

@@ -64,47 +64,34 @@ h2 {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	width: 100%;
-	position: relative;
 	height: 100%;
+	position: relative;
 }
 
 .song {
+	display: flex;
 	
-	transition: all 1s ease-in-out;
 	width: 32%;
+
 
 }
 
 .infoplayer {
-	display: inline-block;
+	display: block;
+	visibility: hidden;
 	text-align: left;
-	max-height: 100%;
-	height: 90%;
-	position: absolute;
-	margin: auto;
-	top: 0;
-	left: 35%;
-	bottom: 0;
-	right: 0;
-	transition: all 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	margin-left: 20px;
+	opacity: 0;
 
 
 
 }
 
-.infoplayer audio {
-	width: 100%;
-}
 
 .songinfo {
 	transition: all 1s ease-in-out;
 	
-
-}
-
-.songinfo img {
-	width: 100%;
-
 }
 
 
@@ -112,6 +99,9 @@ h2 {
 
 /* Music Player Animations */
 
+.c1-tsi-1 {
+
+}
 
 
 .c1-tsi-2 {
@@ -130,8 +120,37 @@ h2 {
 .c1-tip-1 {
 	visibility: visible;
 	opacity: 1;
+	display: inline-block;
+	
 }
 
+@keyframes positionleftsongcenter {
+  0%   { 
+    transform: translateX(0%);
+  }
+  90%   { 
+    transform: translateX(40%);
+  }
+ 
+  100% { 
+  	margin-left: auto;
+  	margin-right: auto;
+  	right: 0;
+  	left: 0;
+  	
+
+  }
+}
+
+
+.c1-ts-1 {
+	width: 66%;
+	position: absolute;
+/* 	animation: positionleftsongcenter 1s .2s ease-in-out;
+	animation-fill-mode: forwards; */
+/* 	left: 50%;
+	transform: translateX(-50%); */
+}
 	
 	
 
