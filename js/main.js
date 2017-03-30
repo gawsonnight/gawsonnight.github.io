@@ -1,41 +1,81 @@
 
 
 
-$('#songimage1').on('click', function ( event ) {
-  event.preventDefault();
-    $('#songinfo2').addClass('c1-tsi-2');
-    $('#songinfo3').addClass('c1-tsi-3');
-    $('#songinfo1').addClass('c1-tsi-1');
-
-     setTimeout(function () {
-      $('#song2, #song3').addClass('displaynone');
-    }, 400);
-     
-    setTimeout(function () {
-    	$('#infoplayer1').addClass('c1-tip-1');
-    }, 500);
-
-       setTimeout(function () {
-    $('#song1').addClass('c1-ts-1');
-    }, 400);
-
-
- 
-    
-    
+$('#songinfo1').on('click', function () {
+    // Type code related to event here! :)
+    $('#song1').find('.infoplayer').addClass('slide-ip');
 });
 
 $('#return1').on('click', function () {
     // Type code related to event here! :)
-   $('#infoplayer1').removeClass('c1-tip-1');
-   
-
- setTimeout(function () {
-     $('#songinfo2').removeClass('c1-tsi-2');
-    $('#songinfo3').removeClass('c1-tsi-3');
-
-      }, 550);
-
-   $('#song1').removeClass('c1-ts-1');
-   $('#song2, #song3').removeClass('displaynone');
+    $('#song1').find('.infoplayer').removeClass('slide-ip');
 });
+
+
+
+
+
+$('#songinfo2').on('click', function () {
+    // Type code related to event here! :)
+    $('#song2').find('.infoplayer').addClass('slide-ip');
+});
+
+$('#return2').on('click', function () {
+    // Type code related to event here! :)
+    $('#song2').find('.infoplayer').removeClass('slide-ip');
+});
+
+
+
+
+
+
+
+$('#songinfo3').on('click', function () {
+    // Type code related to event here! :)
+    $('#song3').find('.infoplayer').addClass('slide-ip');
+});
+
+$('#return3').on('click', function () {
+    // Type code related to event here! :)
+    $('#song3').find('.infoplayer').removeClass('slide-ip');
+});
+
+
+
+
+
+$('#songinfo4').on('click', function () {
+    // Type code related to event here! :)
+    $('#song4').find('.infoplayer').addClass('slide-ip');
+});
+
+
+$('#return4').on('click', function () {
+    // Type code related to event here! :)
+    $('#song4').find('.infoplayer').removeClass('slide-ip');
+});
+
+
+$('#songinfo5').on('click', function () {
+    // Type code related to event here! :)
+    $('#song5').find('.infoplayer').addClass('slide-ip');
+});
+
+$('#return5').on('click', function () {
+    // Type code related to event here! :)
+    $('#song5').find('.infoplayer').removeClass('slide-ip');
+});
+
+
+$('#songinfo6').on('click', function () {
+    // Type code related to event here! :)
+    $('#song6').find('.infoplayer').addClass('slide-ip');
+});
+
+$('#return6').on('click', function () {
+    // Type code related to event here! :)
+    $('#song6').find('.infoplayer').removeClass('slide-ip');
+});
+
+
