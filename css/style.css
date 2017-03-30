@@ -3,6 +3,7 @@ body {
 	text-align: center;
 	margin-left: 5%;
 	margin-right: 5%;
+	background-color: pink;
 }
 
 
@@ -55,46 +56,51 @@ h2 {
 
 
 
+
+
+
+
+.song {
+	display: flex;
+	justify-content: space-between;
+	width: 32%;
+	position: relative;
+	overflow: hidden;
+
+
+}
+
+
+
+
+.songinfo {
+	transition: all 1s ease-in-out;
+	width: 100%;
+	
+}
+
+.infoplayer {
+	background-color: white;
+	text-align: left;
+	transition: opacity 1s ease-in-out;
+	position: absolute;
+	max-width: 100%;
+	padding: 10px;
+	height: 100%;
+	transform: translateX(-100%)
+
+
+}
+
 .music img {
+	width: 100%;
 	display: block;
 }
 
 .music-wrapper {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 100%;
-	height: 100%;
-	position: relative;
 }
-
-.song {
-	display: flex;
-	
-	width: 32%;
-
-
-}
-
-.infoplayer {
-	display: block;
-	visibility: hidden;
-	text-align: left;
-	transition: opacity 1s ease-in-out;
-	margin-left: 20px;
-	opacity: 0;
-
-
-
-}
-
-
-.songinfo {
-	transition: all 1s ease-in-out;
-	
-}
-
-
 
 
 /* Music Player Animations */
@@ -105,13 +111,15 @@ h2 {
 
 
 .c1-tsi-2 {
-	transform: translateX(1000%);
+	
+	transform: translateX(200%);
 	opacity: 0;
 	
 }
 
 .c1-tsi-3 {
-	transform: translateX(1000%);
+	
+	transform: translateX(200%);
 	opacity: 0;
 	
 }
@@ -128,16 +136,23 @@ h2 {
   0%   { 
     transform: translateX(0%);
   }
+  20%   { 
+    transform: translateX(200%);
+    margin-left: auto;
+	margin-right: auto;
+	opacity: 0;
+  }
   90%   { 
-    transform: translateX(40%);
+  
+    margin-left: auto;
+	margin-right: auto;
+	opacity: 0;
   }
  
   100% { 
+  	opacity: 1;
   	margin-left: auto;
-  	margin-right: auto;
-  	right: 0;
-  	left: 0;
-  	
+	margin-right: auto;
 
   }
 }
@@ -145,7 +160,9 @@ h2 {
 
 .c1-ts-1 {
 	width: 66%;
-	position: absolute;
+/* 	margin-left: auto;
+	margin-right: auto; */
+
 /* 	animation: positionleftsongcenter 1s .2s ease-in-out;
 	animation-fill-mode: forwards; */
 /* 	left: 50%;
@@ -155,14 +172,10 @@ h2 {
 	
 
 
-.displaynone {
-	display: none;
-}
-
-* {
-	 -webkit-transition: all 1s ease .15s;
-    -moz-transition: all 1s ease .15s;
-    -o-transition: all 1s ease .15s;
-    -ms-transition: all 1s ease .15s;
-    transition: all 1s ease .15s;
-}
+/* * {
+	 -webkit-transition: opacity 1s ease .15s;
+    -moz-transition: opacity 1s ease .15s;
+    -o-transition: opacity 1s ease .15s;
+    -ms-transition: opacity 1s ease .15s;
+    transition: opacity 1s ease .15s;
+} */
