@@ -258,7 +258,7 @@ audio {
 }
 
 
-@media screen and (max-width:660px) {
+@media screen and (max-width:500px) {
 
 
 
@@ -270,7 +270,7 @@ audio {
 }
 
 .section {
-
+	width: 100%;
 }
 
 
