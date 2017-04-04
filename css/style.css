@@ -8,12 +8,17 @@ body {
 
 
 .body {
-	max-width: 60%;
+	width: 90%;
+	max-width: 750px;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
 	height: 100%;
 
+}
+
+header img {
+	height: 400px;
 }
 
 
@@ -151,6 +156,7 @@ audio {
 	background-color: white;
 	border-radius: 5px;
 	border: 1px solid blue;
+	width: 95%;
 }
 
 .inner-content {
@@ -185,7 +191,7 @@ audio {
   position: relative;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 30px;
   /* margin: 100px auto; */
 }
 
@@ -249,7 +255,7 @@ audio {
   z-index: 2;
   background: #b9f3fe;
   background: gradient-gradient(#ffffff, #77a1b9]);
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.1),  0 1px 0 rgba(255,255,255,0.1),  0 0 10px rgba(100,231,253,1),  inset 0 0 8px rgba( 61,157,247,0.8),  inset 0 -2px 5px rgba(185,231,253,0.3),  inset 0 -3px 8px rgba(185,231,253,0.5);
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.1),  0 1px 0 rgba(255,255,255,0.1),  0 0 10px rgba(100,231,253,1),  inset 0 0 8px rgba( 61,157,247,0.8),  inset 0 -2px 5px rgba(185,231,253,0.3),  inset 0 -5px 5px rgba(185,231,253,0.5);
 }
 
 .switch input:checked ~ label i {
@@ -265,31 +271,6 @@ audio {
 
 
 
-@media only screen 
-    and (min-device-width : 375px) // or 213.4375em
-    and (max-device-width : 667px) // or 41.6875em
-    and (width : 375px) // or 23.4375em
-    and (height : 559px) // or 34.9375em
-    and (orientation : portrait) 
-    and (color : 8)
-    and (device-aspect-ratio : 375/667)
-    and (aspect-ratio : 375/559)
-    and (device-pixel-ratio : 2)
-    and (-webkit-min-device-pixel-ratio : 2)
-{ 
-
-.body{
-	max-width: 100%;
-	height: 100%;
-	width: 100%;
-
-}
-
-.section {
-	width: 100%;
-}
-
-}
 
 
 

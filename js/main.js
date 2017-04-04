@@ -148,7 +148,8 @@ $('#return9').on('click', function () {
 
 
 
-$('input[type="checkbox"]').on('change', function () {
+$('input[type="checkbox"]').on('change', function (event) {
+   event.preventDefault();
   var checkboxIsChecked = $(this).is(":checked");
   if (checkboxIsChecked) {
     $(this).closest('article').find('.section-content').addClass('slide-height');
