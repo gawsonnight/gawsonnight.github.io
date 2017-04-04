@@ -261,24 +261,7 @@ audio {
 }
 
 
-@media screen and (max-width:750px) {
 
-
-
-
-
-.body{
-	max-width: 100%;
-	height: 100%;
-
-}
-
-.section {
-	width: 100%;
-}
-
-
-}
 
 
 
@@ -298,6 +281,7 @@ audio {
 .body{
 	max-width: 100%;
 	height: 100%;
+	width: 100%;
 
 }
 
@@ -306,6 +290,8 @@ audio {
 }
 
 }
+
+
 
 /* .lbl {
   position: relative;
