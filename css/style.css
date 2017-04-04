@@ -141,7 +141,8 @@ audio {
 }
 
 .slide-height {
-	max-height: 5000px;
+	max-height: 2000px;
+
 }
 
 .section-title {
@@ -150,8 +151,13 @@ audio {
 
 .section-content {
 	background-color: white;
+	border-radius: 5px;
+	border: 1px solid blue;
 }
 
+.inner-content {
+	padding: 10px;
+}
 /* Button Styles */
 
 
