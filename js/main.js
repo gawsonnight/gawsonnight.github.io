@@ -79,3 +79,80 @@ $('#return6').on('click', function () {
 });
 
 
+
+
+$('#songinfo7').on('click', function () {
+    // Type code related to event here! :)
+    $('#song7').find('.infoplayer').addClass('slide-ip');
+});
+
+
+$('#return7').on('click', function () {
+    // Type code related to event here! :)
+    $('#song7').find('.infoplayer').removeClass('slide-ip');
+});
+
+
+$('#songinfo8').on('click', function () {
+    // Type code related to event here! :)
+    $('#song8').find('.infoplayer').addClass('slide-ip');
+});
+
+$('#return8').on('click', function () {
+    // Type code related to event here! :)
+    $('#song8').find('.infoplayer').removeClass('slide-ip');
+});
+
+
+$('#songinfo9').on('click', function () {
+    // Type code related to event here! :)
+    $('#song9').find('.infoplayer').addClass('slide-ip');
+});
+
+$('#return9').on('click', function () {
+    // Type code related to event here! :)
+    $('#song9').find('.infoplayer').removeClass('slide-ip');
+});
+
+
+// $('.music-title').on('click', function () {
+//     // Type code related to event here! :)
+//     $('.all-music').addClass('slide-height');
+// });
+
+// $('.portfolio-title').on('click', function () {
+//     // Type code related to event here! :)
+//     $('.all-portfolio').addClass('slide-height');
+// });
+
+// $('.contact-title').on('click', function () {
+//     // Type code related to event here! :)
+//     $('.all-contact').addClass('slide-height');
+// });
+
+// $('.experience-title').on('click', function () {
+//     // Type code related to event here! :)
+//     $('.all-experience').addClass('slide-height');
+// });
+
+// $('.skills-title').on('click', function () {
+//     // Type code related to event here! :)
+//     $('.all-skills').addClass('slide-height');
+// });
+
+
+// $('.aboutme-title').on('click', function () {
+//     // Type code related to event here! :)
+//     $('.all-aboutme').addClass('slide-height');
+// });
+
+
+
+$('input[type="checkbox"]').on('change', function () {
+  var checkboxIsChecked = $(this).is(":checked");
+  if (checkboxIsChecked) {
+    $(this).closest('article').find('.section-content').addClass('slide-height');
+  } else {
+    $(this).closest('article').find('.section-content').removeClass('slide-height');
+  }
+});
