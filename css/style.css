@@ -8,7 +8,7 @@ body {
 
 
 .body {
-	width: 100%;
+	max-width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
@@ -21,9 +21,6 @@ body {
 	width: 100px;
 }
 
-header img {
-	width: 250px;
-}
 
 nav li {
 	display: inline-block;
@@ -158,6 +155,8 @@ audio {
 .inner-content {
 	padding: 10px;
 }
+
+
 /* Button Styles */
 
 
@@ -259,6 +258,23 @@ audio {
 }
 
 
+@media screen and (max-width:660px) {
+
+
+
+
+
+.body{
+	max-width: 100%;
+
+}
+
+.section {
+
+}
+
+
+}
 
 /* .lbl {
   position: relative;
