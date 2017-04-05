@@ -37,6 +37,7 @@ header {
 .logo {
 	width: 40%;
 	margin: 10px;
+	margin-bottom: 30px;
 }
 
 .skills img {
@@ -77,11 +78,13 @@ p {
 
 h2 {
 	font-size: 20px;
-	margin-bottom: 26px;
+/* 	margin-bottom: 26px; */
+	margin-top: 0;
+	margin-bottom: 0;
 	margin-left: 1px;
 	font-family: gawson;
 	text-transform: uppercase;
-	
+	display: inline-block;
 	letter-spacing: 4px;
 }
 
@@ -176,6 +179,82 @@ form button, .inner-content label{
 }
 
 
+.loading-dots {
+  width: 130px;
+  margin: 0 auto;
+  opacity: 1;
+  display: inline-block;
+  
+}
+
+.dot {
+	
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #E1574C;
+  /* margin-left: 0.8em; */
+display: inline-block;
+margin-left: 3px;
+margin-right: 3px;
+opacity: 0;
+visibility: hidden;
+
+}
+
+@keyframes dotsquad {
+  0%   { 
+   
+    opacity: 0;
+  }
+
+  50% { 
+    
+    opacity: 0.5;
+  }
+   100%%   { 
+    
+    opacity: 1;
+  }
+}
+
+
+.dot2:first-child {
+  /* Animation property */
+animation: dotsquad 1.5s linear 2.0s infinite;
+
+}
+
+.dot2:nth-child(2) {
+  /* Animation property (with delay)*/
+  animation: dotsquad 1.5s linear 2.3s infinite;
+}
+
+.dot2:nth-child(3) {
+  /* Animation property (with delay)*/
+  animation: dotsquad 1.5s linear 2.6s infinite;
+}
+
+.dot2:nth-child(4) {
+  /* Animation property (with delay)*/
+  animation: dotsquad 1.5s linear 2.9s infinite;
+}
+
+.dot2:last-child {
+  /* Animation property (with delay)*/
+
+  animation: dotsquad 1.5s linear 3.2s infinite;
+}
+
+.shown {
+	visibility: visible;
+}
+
+.dot2 {
+	visibility: visible;
+}
+
+
 /* Music Player Animations */
 
 
@@ -191,6 +270,8 @@ form button, .inner-content label{
 	overflow: hidden;
 	transition: max-height 2s ease-in-out;
 	-webkit-transition: max-height 2s ease-in-out;
+	-webkit-transition-delay: 1s; /* Safari */
+    transition-delay: 1s;
 
 }
 
@@ -222,6 +303,8 @@ form button, .inner-content label{
     border-left-style: dashed;
 	width: 100%;
 	background: linear-gradient(#C2EDFA, white);
+	margin-top: 15px;
+	margin-bottom: 15px;
 
 
 
