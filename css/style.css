@@ -141,6 +141,7 @@ button:focus {
 	padding: 5px;
 	height: 100%;
 	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
 
 
 }
@@ -181,6 +182,7 @@ form button, .inner-content label{
 
 .slide-ip {
 	transform: translateX(0);
+	-webkit-transform: translateX(0);
 }
 
 
@@ -188,6 +190,7 @@ form button, .inner-content label{
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 2s ease-in-out;
+	-webkit-transition: max-height 2s ease-in-out;
 
 }
 
