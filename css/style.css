@@ -87,6 +87,7 @@ h2 {
 
 h3 {
 	margin-top: 5px;
+	font-size: 17px;
 }
 
 audio {
@@ -372,7 +373,7 @@ video#bgvid {
     }
 
     .skill {
-    	width: 32%;
+    	width: 26%;
     }
 
     .song {
