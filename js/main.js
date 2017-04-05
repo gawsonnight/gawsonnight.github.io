@@ -153,7 +153,9 @@ $('input[type="checkbox"]').on('change', function (event) {
   var checkboxIsChecked = $(this).is(":checked");
   if (checkboxIsChecked) {
     $(this).closest('article').find('.section-content').addClass('slide-height');
+    $(this).closest('article').find('.section-title').addClass('slide-title');
   } else {
     $(this).closest('article').find('.section-content').removeClass('slide-height');
+    $(this).closest('article').find('.section-title').removeClass('slide-title');
   }
 });

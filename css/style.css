@@ -4,6 +4,9 @@ body {
 	margin-left: 5%;
 	margin-right: 5%;
 	background-color: white;
+	font-family: gawson;
+	text-transform: uppercase;
+	font-size: 16px;
 }
 
 
@@ -28,7 +31,12 @@ header {
 
 
 .skills img {
-	width: 100px;
+	width: 100%;
+}
+
+.skill {
+	width: 16%;
+	text-align: center;
 }
 
 
@@ -60,9 +68,11 @@ p {
 h2 {
 	font-size: 20px;
 	margin-bottom: 26px;
+	margin-left: 1px;
 	font-family: gawson;
 	text-transform: uppercase;
-	color: white;
+	
+	letter-spacing: 4px;
 }
 
 h3 {
@@ -103,7 +113,7 @@ audio {
 }
 
 .infoplayer {
-	background-color: white;
+	background-color: rgba(255,255,255,0.95);
 	text-align: left;
 	transition: all .75s ease-in-out;
 	position: absolute;
@@ -130,6 +140,7 @@ audio {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 10px;
+	flex-wrap: wrap;
 	
 }
 
@@ -157,14 +168,29 @@ audio {
 
 .section-title {
 	position: relative;
-	background-color: red;
+	background-color: #E45958;
+	transition: all 1.5s ease-in-out;
+	color: white;
+
 }
 
+
+.slide-title {
+	background-color: white;
+	color: #E45958;
+}
 .section-content {
 	background-color: #C2EDFA;
 	border-radius: 5px;
-	border: 1px solid #C2EDFA;
+	border: 1px #C2EDFA;
+	border-top-style: dotted;
+    border-right-style: dashed;
+    border-bottom-style: hidden;
+    border-left-style: dashed;
 	width: 100%;
+	background: linear-gradient(#C2EDFA, white);
+
+
 
 }
 
@@ -204,7 +230,7 @@ video#bgvid {
 
 @font-face {
     font-family: gawson;
-    src: url('../fonts/Anurati-Regular.otf');
+    src: url('../fonts/mecha.ttf');
 }
 
 
@@ -313,6 +339,18 @@ video#bgvid {
 @media screen and (max-width: 700px) {
     video#bgvid  {
         display:none;
+       	visibility: hidden;
+    }
+
+    .skill {
+    	width: 32%;
+    }
+
+    .song {
+    	width: 95%;
+    	margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 10px;
     }
 }
 
