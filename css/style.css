@@ -386,6 +386,10 @@ video#bgvid {
     .logo {
     	width: 70%;
     }
+
+    audio {
+    	max-width: 80%;
+    }
 }
 
 
