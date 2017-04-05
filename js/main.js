@@ -159,3 +159,9 @@ $('input[type="checkbox"]').on('change', function (event) {
     $(this).closest('article').find('.section-title').removeClass('slide-title');
   }
 });
+
+
+$('.submit').on('click', function (event) {
+   event.preventDefault();
+    
+});

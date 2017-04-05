@@ -183,15 +183,15 @@ form button, .inner-content label{
 }
 
 
-.all-music, .all-portfolio, .all-contact, .all-experience, .all-skills, .all-aboutme{
+.section-content/* .all-music, .all-portfolio, .all-contact, .all-experience, .all-skills, .all-aboutme */{
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height 3s ease-in-out;
+	transition: max-height 2s ease-in-out;
 
 }
 
 .slide-height {
-	max-height: 2000px;
+	max-height: 1000px;
 
 }
 
