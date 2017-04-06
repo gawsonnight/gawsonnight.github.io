@@ -170,7 +170,7 @@ button:focus {
 
 input, textarea {
 	display: block;
-	width: 50%;
+	width: 90%;
 	border: none;
 }
 
@@ -254,6 +254,27 @@ animation: dotsquad 1.5s linear 2.0s infinite;
 	visibility: visible;
 }
 
+
+.contact-section {
+	display: flex;
+}
+
+.contact-image {
+	width: 50%;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.contact-image img {
+	width: 100%;
+	opacity: .9;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.contact-form {
+	width: 50%;
+}
 
 /* Music Player Animations */
 
